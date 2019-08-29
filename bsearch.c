@@ -6,7 +6,7 @@ void search(int a[],int lb,int ub,int x)
     if(lb==ub)
     {
         if(a[lb]==x)
-            printf("Element found at position : %d \n" , lb);
+            printf("Element found at position : %d \n" , lb+1);
         else
             printf("Element not found ! \n");
     }
@@ -15,7 +15,7 @@ void search(int a[],int lb,int ub,int x)
     {
         mid=(lb+ub)/2;
         if(a[mid]==x)
-            printf("Element found at position : %d \n" ,mid);
+            printf("Element found at position : %d \n" ,mid+1);
         else if (a[mid]<x)
             search(a,mid+1,ub,x);
         else
