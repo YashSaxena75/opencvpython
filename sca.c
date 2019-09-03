@@ -19,7 +19,7 @@ int t[2];
 initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
 printf("Enter co-oridnates of recgtangle : ");
 scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
-printf("Enter points to shift the rectangle:");
+printf("magnify by:");
 scanf("%d%d",&s1,&s2);
 r[0][0]=x1;
 r[0][1]=y1;
