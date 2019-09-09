@@ -6,7 +6,6 @@ def zero():
     t.insert(END, 0)
     root.mainloop()
 
-
 def one():
     t.insert(END, 1)
     root.mainloop()
@@ -70,9 +69,8 @@ def mult():
 def ge():
     x=t.get()
     x=str(x)
-    pymsgbox.alert("Result is : "+str(eval(x)))
+    pymsgbox.alert("Result is : "+ str(eval(x)))
     t.delete(0, END)
-
 
 def clear():
     t.delete(0,END)
