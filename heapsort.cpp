@@ -6,9 +6,9 @@ void heapify_me(int a[],int n,int i)
     int l=2*i+1;
     int r=2*i+2;
     if(l<n && a[l]>a[large])
-        large=r;
-    if(r<n && a[r]>a[large])
         large=l;
+    if(r<n && a[r]>a[large])
+        large=r;
     if(large!=i)
     {
         swap(a[i],a[large]);
@@ -42,7 +42,7 @@ int main()
         cin>>a[i];
     }
     sort_me(a,n);
-    cout<<"Sorted array is : " ;
+    cout<<"Sorted array is : ";
     for(i=0;i<n;i++)
         cout<<a[i];
     return 0;
